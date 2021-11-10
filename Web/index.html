@@ -1,0 +1,32 @@
+
+<html >
+<head>
+  <title>Predict the Weight</title>  
+</head>
+
+<body>
+ <div style="text-align:center">
+	<h1>Make prediction</h1>
+
+    <img style="width:230px" src="https://drive.google.com/uc?export=view&id=1QzEphhtYFXku89t2m6qnDxNHWBXTgRST"
+                 alt="通用的占位符缩略图">
+<h2> Model selected</h2>
+<div style="text-align:center">
+  <a href="#"> 
+    <form action="{{ url_for('getpredictionMAC')}}"method="post">
+    	<input type="text" name="height" placeholder=" " required="required" />
+      <button type="submit" class="btn btn-primary btn-block btn-large">getpredictionMAC</button>
+    </form>
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#"> 
+    <form action="{{ url_for('getpredictionLM')}}"method="post">
+    	<input type="text" name="height" placeholder=" " required="required" />
+      <button type="submit" class="btn btn-primary btn-block btn-large">getpredictionLM</button>
+    </form>
+  </a>  
+                   
+</div> 
+
+</body>
+</html>
